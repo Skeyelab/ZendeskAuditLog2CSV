@@ -4,20 +4,17 @@ require 'bundler/setup'
 require 'dotenv'
 Dotenv.load
 
-
 require 'typhoeus'
 require 'pry'
 require 'json'
 require 'csv'
 
-puts 
+zendesk_domain = ENV['ZD_DOMAIN']
+zendesk_user = ENV['ZD_USER']
+zendesk_token = ENV['ZD_TOKEN']
 
-zendesk_domain = ENV['DOMAIN']
-zendesk_user = ENV['USER']
-zendesk_token = ENV['TOKEN']
 
 CSV.open("out.csv", "wb") do |csv|
-
 
   for page in 1..10
 
