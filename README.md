@@ -1,6 +1,10 @@
 ZendeskAuditLog2CSV
 ===================
 
+
+
+This script will export the system audit log found at <https://domain.zendesk.com/agent/admin/account> to a CSV file.
+
   
 Instructions
 
