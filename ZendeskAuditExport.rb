@@ -1,9 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
-
 require 'dotenv'
 Dotenv.load
-
 
 require 'typhoeus'
 require 'pry'
@@ -15,7 +13,6 @@ zendesk_user = ENV['ZD_USER']
 zendesk_token = ENV['ZD_TOKEN']
 
 pages = ENV['PAGES']
-
 
 CSV.open("out.csv", "wb") do |csv|
 
