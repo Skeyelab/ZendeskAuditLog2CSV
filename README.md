@@ -1,10 +1,10 @@
-# ZendeskAuditLog2CSV
+ZendeskAuditLog2CSV
+===================
 
+1.  rename .env.sample \> .env
 
-rename .env.sample > .env
+2.  edit settings in .env
 
-edit settings in .env
+3.  bundle install
 
-bundle install
-
-ruby ZendeskAuditExport.rb
+4.  ruby ZendeskAuditExport.rb
